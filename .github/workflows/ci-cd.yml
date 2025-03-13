@@ -57,5 +57,5 @@ jobs:
       - name: Deploy application
         run: |
             npm install
-            npm start &
+            Start-Process -FilePath "npm.cmd" -ArgumentList "start" -NoNewWindow
         shell: powershell
