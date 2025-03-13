@@ -22,7 +22,7 @@ jobs:
         run: npm install
 
       - name: Run tests
-        run: npm test
+        run: npm run check
 
       - name: Capture test results
         run: npm test -- --reporter json > test-results.json
