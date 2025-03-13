@@ -48,7 +48,7 @@ jobs:
 
       - name: Set PowerShell Execution Policy
         run: Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-        shell: pwsh
+        shell: powershell
     
       - name: Display test results
         run: cat test-results.json
