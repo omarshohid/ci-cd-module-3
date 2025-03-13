@@ -47,7 +47,8 @@ jobs:
           name: test-results
 
       - name: Set PowerShell Execution Policy
-        run: Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+        run: |
+            powershell.exe -NoProfile -ExecutionPolicy Unrestricted -Command "Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force"
         shell: powershell
     
       - name: Display test results
